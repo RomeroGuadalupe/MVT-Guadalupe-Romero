@@ -9,19 +9,12 @@ def familiares (request):
     familiar = familia.objects.all()
 
     lista_integrantes = []
-      
-
+    
     for integrante in familiar:
         info = f"Mi {integrante.parentesco} se llama {integrante.nombre} {integrante.apellido}, tiene {integrante.edad} años y nacio el {integrante.fecha_nacimiento}"
 
         lista_integrantes.append(info) 
        
-       #lista_integrantes.append (integrante.nombre)
-       #lista_integrantes.append (integrante.apellido)
-       #lista_integrantes.append (integrante.edad)
-       #lista_integrantes.append (integrante.fecha_nacimiento)
-
-
     datos = {"familiares":lista_integrantes}
 
     archivo = open(r"C:\Users\Guadalupe\Desktop\CODER\PYTHON\ENTREGA FAMILIA\familia\MiFamilia\GrupoFamiliar\Template\index.html","r")
