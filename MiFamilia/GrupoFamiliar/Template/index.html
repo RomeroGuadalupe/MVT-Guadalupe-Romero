@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Familia</title>
+</head>
+<body>
+
+    
+    <h1 style="color:rgb(213, 24, 238)"> Hola! soy Guadalupe, y te quiero presentar a mi familia! </h1>
+    
+    <img style="max-width: 450px;"  src="https://images.pexels.com/photos/697244/pexels-photo-697244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Familia">
+    
+    <h2 style="color:rgba(42, 157, 165, 0.651)"> Estos son algunos de los integrantes:</h2>
+    
+    <p style="color:rgb(235, 13, 205)">
+    {% for persona in familiares %} 
+        
+        {{ persona }}
+        <br>
+    {% endfor %}
+    </p>
+    
+</body>
+</html>
